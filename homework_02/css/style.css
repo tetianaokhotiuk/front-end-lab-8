@@ -163,4 +163,37 @@ h2 + p {
  	color: red;
  }
 
+ /*task #13*/
+
+ @media (max-width: 1140px) and (max-height: 835px) {
+ 	.tm-sidebar {
+ 		position: relative;
+ 		width: 100%;
+ 		padding: 0;
+ 		height: 10%;
+ 		margin-bottom: 3%;
+ 	}
+
+ 	.tm-main-nav {
+ 		height: 50px;
+ 		padding: 0;
+ 	}
+
+ 	li.tm-nav-item {
+ 		display: block;
+ 		float: left;
+ 		padding: 0;
+ 		width: 25%;
+ 		border-bottom: none;
+ 		font-size: 1rem;
+ 	}
+ 	
+ 	div.tm-main-content {
+
+ 		margin: 0 auto;
+ 		width: 70%;
+ 	}
+
+  }
+
 }
