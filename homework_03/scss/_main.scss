@@ -1,0 +1,112 @@
+$text: null !default;
+$bgtable: null !default;
+$link: null !default;
+$dark: null !default;
+$left: null !default;
+$padding: null !default;
+$marbrief: null !default;
+//Rules
+h1 {
+	text-align: center;
+	color: $title;
+}
+a {
+	color: $link;
+}
+h2 {
+	color: $title;
+}
+img {
+	border: 2px solid $title;
+	display: block;
+	float: left;
+}
+@mixin img {
+	margin-right: $sbreak;
+	margin-bottom: .5rem;
+}
+@mixin brief {
+	width: $brief;
+	float: $left;
+}
+body {
+	background-color: $background;
+	#content {
+		width: $width;
+		margin: 0 auto;
+		background-color: $content;
+		padding: $sbreak;
+		color: $text;
+		.brief {
+			@include brief;
+			background-color: $light;
+			color: $dark;
+			@include img;
+			padding: $xsbreak;
+			padding: $padding;
+			margin-bottom: $marbrief;
+		}
+	}
+	.brief + .img-right {
+		float: right;
+		margin-left: $xsbreak;
+	}
+}
+.img-left {
+	@include img;
+}
+table {
+	background-color: $bgtable;
+	border-collapse: collapse;
+	margin-bottom: $sbreak*3;
+	caption {
+		text-align: right;
+		color: $dark;
+	}
+	th {
+		background-color: $table;
+		text-transform: uppercase;
+		color: $dark;
+	}
+}
+table td, table th {
+	padding: 8px;
+	text-align: left;
+	border-bottom: 1px solid $table;
+}
+table th:nth-child(2n) {
+	border-right: 2px solid $content;
+	border-left: 2px solid $content;
+}
+label {
+	display: block;
+	color: $form;
+}
+form > div:first-child, form > div:nth-child(2) {
+	float: left;
+	width: 49%;
+}
+form>div {
+	margin-bottom: 1rem;
+}
+form > div:first-child {
+	margin-right: 1.1rem;
+}
+input, textarea {
+	width: 100%;
+	color: $form;
+}
+button {
+	color: $button;
+	border-color: $button;
+	border-width: thin;
+	background-color: $content;
+	padding: .5rem 3rem;
+	margin-top: .5rem;
+}
+input[type]::placeholder, textarea::placeholder {
+	color: $lightform;
+}
+form input, textarea {
+	border: 1px solid $lightform;
+}
