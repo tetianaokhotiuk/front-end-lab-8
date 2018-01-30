@@ -1,106 +1,117 @@
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/homework_03\/scss\/_main\.scss}line{font-family:\000039}}
 h1 {
   text-align: center;
-  color: #8B0000; }
+  color: #8B0000;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/homework_03\/scss\/_main\.scss}line{font-family:\0000316}}
 h2 {
-  color: #8B0000; }
+  color: #8B0000;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/homework_03\/scss\/_main\.scss}line{font-family:\0000319}}
 img {
   border: 2px solid #8B0000;
   display: block;
-  float: left; }
+  float: left;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/homework_03\/scss\/_main\.scss}line{font-family:\0000332}}
 body {
-  background-color: #f4d1a4; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/homework_03\/scss\/_main\.scss}line{font-family:\0000334}}
-  body #content {
-    width: 70%;
-    margin: 0 auto;
-    background-color: #fff;
-    padding: 2%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/homework_03\/scss\/_main\.scss}line{font-family:\0000340}}
-    body #content .brief {
-      width: 40%;
-      float: left;
-      background-color: #fcf4e8;
-      margin-right: 2%;
-      margin-bottom: .5rem;
-      padding: 1%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/homework_03\/scss\/_main\.scss}line{font-family:\0000350}}
-  body .brief + .img-right {
-    float: right;
-    margin-left: 1%; }
+  background-color: #f4d1a4;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/homework_03\/scss\/_main\.scss}line{font-family:\0000355}}
+body #content {
+  width: 70%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 2%;
+}
+
+body #content .brief {
+  width: 40%;
+  float: left;
+  background-color: #fcf4e8;
+  margin-right: 2%;
+  margin-bottom: .5rem;
+  padding: 1%;
+}
+
+body .brief+.img-right {
+  float: right;
+  margin-left: 1%;
+}
+
 .img-left {
   margin-right: 2%;
-  margin-bottom: .5rem; }
+  margin-bottom: .5rem;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/homework_03\/scss\/_main\.scss}line{font-family:\0000358}}
 table {
   border-collapse: collapse;
-  margin-bottom: 6%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/homework_03\/scss\/_main\.scss}line{font-family:\0000362}}
-  table caption {
-    text-align: right; }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/homework_03\/scss\/_main\.scss}line{font-family:\0000366}}
-  table th {
-    background-color: #ddd;
-    text-transform: uppercase; }
+  margin-bottom: 6%;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/homework_03\/scss\/_main\.scss}line{font-family:\0000372}}
-table td, table th {
+table caption {
+  text-align: right;
+}
+
+table th {
+  background-color: #ddd;
+  text-transform: uppercase;
+}
+
+table td,
+table th {
   padding: 8px;
   text-align: left;
-  border-bottom: 1px solid #ddd; }
+  border-bottom: 1px solid #ddd;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/homework_03\/scss\/_main\.scss}line{font-family:\0000377}}
 table th:nth-child(2n) {
   border-right: 2px solid #fff;
-  border-left: 2px solid #fff; }
+  border-left: 2px solid #fff;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/homework_03\/scss\/_main\.scss}line{font-family:\0000381}}
 label {
   display: block;
-  color: #A9A9A9; }
+  color: #A9A9A9;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/homework_03\/scss\/_main\.scss}line{font-family:\0000385}}
-form > div:first-child, form > div:nth-child(2) {
+form>div:first-child,
+form>div:nth-child(2) {
   float: left;
-  width: 49%; }
+  width: 49%;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/homework_03\/scss\/_main\.scss}line{font-family:\0000389}}
-form > div {
-  margin-bottom: 1rem; }
+form>div {
+  margin-bottom: 1rem;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/homework_03\/scss\/_main\.scss}line{font-family:\0000392}}
-form > div:first-child {
-  margin-right: 1.1rem; }
+form>div:first-child {
+  margin-right: 1.1rem;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/homework_03\/scss\/_main\.scss}line{font-family:\0000395}}
-input, textarea {
+input,
+textarea {
   width: 100%;
-  color: #A9A9A9; }
+  color: #A9A9A9;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/homework_03\/scss\/_main\.scss}line{font-family:\0000399}}
 button {
   color: #4f74e3;
   border-color: #4f74e3;
   border-width: thin;
   background-color: #fff;
   padding: .5rem 3rem;
-  margin-top: .5rem; }
+  margin-top: .5rem;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/homework_03\/scss\/_main\.scss}line{font-family:\00003107}}
-input[type]::placeholder, textarea::placeholder {
-  color: #cfcfcf; }
+input[type]::placeholder,
+textarea::placeholder {
+  color: #cfcfcf;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/homework_03\/scss\/_main\.scss}line{font-family:\00003110}}
-form input, textarea {
-  border: 1px solid #cfcfcf; }
+form input,
+textarea {
+  border: 1px solid #cfcfcf;
+}
+
 
 /*# sourceMappingURL=style1.css.map */
