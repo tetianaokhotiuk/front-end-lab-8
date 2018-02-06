@@ -3,6 +3,11 @@ a {
 	color: #333;
 }
 
+ul {
+	padding: 0;
+	margin: 0;
+}
+
 @media screen and (min-width: 900px) {
 	.container,
 	header.top-header {
@@ -12,8 +17,9 @@ a {
 	.wrapper--img div.blue p {
 		text-align: left;
 	}
-	footer div.container nav.navfooter {
+	footer div.container nav.navfooter ul {
 		justify-content: flex-start;
+		padding: 0;
 	}
 	footer div.container p.footer__text {
 		padding-top: 1rem;
@@ -85,10 +91,11 @@ a {
 	section.news {
 		padding: 0;
 	}
-	footer nav.navfooter {
+	footer nav.navfooter ul {
 		display: flex;
 		justify-content: center;
-		padding: 1rem 0;
+		padding: 0;
+		list-style: none;
 	}
 	footer nav.navfooter a {
 		color: #fff;
@@ -263,3 +270,4 @@ footer .footer__item a:hover {
 		float: left;
 	}
 }
+
