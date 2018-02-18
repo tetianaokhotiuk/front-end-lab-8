@@ -8,15 +8,17 @@ function reverseNumber(num) {
 		
 		number.unshift("-");
 
-		return console.log(Number(number.join("")));
+		return Number(number.join(""));
 
 	} else {
 
-		return console.log(Number(num.toString().split("").reverse().join("")));
+		return Number(num.toString().split("").reverse().join(""));
 
 	}
 	
 }
+
+
 
 
 

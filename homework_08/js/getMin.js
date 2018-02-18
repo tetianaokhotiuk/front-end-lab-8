@@ -12,6 +12,6 @@ function getMin(a, b, c) {
 
   }
 
-  return console.log(min);
+  return min;
 }
  

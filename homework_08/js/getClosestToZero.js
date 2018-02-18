@@ -12,6 +12,6 @@ function getClosestToZero(a, b, c) {
 
   }
 
-  return console.log(closest);
+  return closest;
 }
 

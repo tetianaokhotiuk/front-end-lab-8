@@ -1,7 +1,7 @@
 function isBigger(a, b) {
-  return console.log(a > b)
+  return (a > b);
 }
 
 function isSmaller(b, a) {
-	return isBigger(a, b)
+	return isBigger(a, b);
 }

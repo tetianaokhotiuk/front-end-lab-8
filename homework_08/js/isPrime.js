@@ -9,7 +9,7 @@ function isPrime(a) {
 		}
 	}
 
-	return console.log(count === 2);
+	return (count === 2);
 	
 }
 
