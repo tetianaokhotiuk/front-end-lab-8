@@ -4,10 +4,12 @@ function isPrime(a) {
 
 	for (let i = 0; i <= a; i++) {
 		
-		if (a%i === 0) {
+		if ((a%i === 0) && (a > 1)) {
 			count++;
 		}
 	}
 
-	return console.log(count <= 2);
+	return console.log(count === 2);
+	
 }
+

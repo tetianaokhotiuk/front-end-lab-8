@@ -6,12 +6,12 @@ function getMin(a, b, c) {
 
     if (arguments[i] < min) {
 
-      min = arguments[i]
+      min = arguments[i];
 
     }
 
   }
 
-  return min
+  return console.log(min);
 }
  
