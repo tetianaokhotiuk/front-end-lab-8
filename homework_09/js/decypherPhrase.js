@@ -15,4 +15,3 @@ function decypherPhrase(obj, string) {
 }
 
 
-//decypherPhrase(charactersMap, "kiggy dog");

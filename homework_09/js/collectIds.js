@@ -35,26 +35,10 @@ function collectIds(arr){
         return item.rating > 3}), function(item){
         return item.id});
     
-
-    console.log(newArrRating);
+    return newArrRating;
+    
 }
-collectIds(movies);
 
 
 
-// newArr = [];
-// for (var i = 0; i < movies.length; ++i) {
-// 	var item = movies[i];
-	 
 
-//   	if (item.rating > 3) {
-//     newArr.push( item.id);
-//   }
-
-// }
-
-// console.log(newArr);
-
-
-
-//collectIds(movies);
