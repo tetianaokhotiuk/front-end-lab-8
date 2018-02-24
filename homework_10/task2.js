@@ -32,12 +32,12 @@ function showResult(fighter) {
 }
 
 function fighter(obj) {
-	// let wins = 0;
-	// let loses = 0;
 
 	let objCombat = {
+
 			wins: 0,
 			loses: 0
+			
 		}
 	
 	obj.getName = function() {
@@ -57,12 +57,9 @@ function fighter(obj) {
 	};
 
 	obj.getCombatHistory = function() {
-		
-		
-		
+			
 		return objCombat;
 	};
-
 
 	obj.fight = function(obj2) {
 
@@ -81,16 +78,9 @@ function fighter(obj) {
 
 		};
 
-		
-
 	return obj;
 
 }
-
-
-//  let foo = {name: 'John'};
- 
-// fighter(foo);
 
 /**
  * The following code must be valid after implementation!
