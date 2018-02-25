@@ -33,11 +33,11 @@ function showResult(fighter) {
 
 function fighter(obj) {
 
-	let objCombat = {
+	var objCombat = {
 
 			wins: 0,
 			loses: 0
-			
+
 		}
 	
 	obj.getName = function() {
@@ -64,15 +64,18 @@ function fighter(obj) {
 	obj.fight = function(obj2) {
 
 		if (!obj2.block()) {
-
-
+		
 			obj2.hp = obj2.hp - obj.attack;
-			console.log(`${obj.name} damage ${obj2.name}`);
+			console.log(`${obj.name} dealt damage to ${obj2.name}`);
+
 			if (obj2.hp < obj.attack) {
-			obj2.getCombatHistory().loses++;
-			obj.getCombatHistory().wins++;
+				obj2.hp === 0;
+				obj2.getCombatHistory().loses++;
+				obj.getCombatHistory().wins++;
 			}
+
 		} else {
+			
 			console.log(`${obj.name} is blocked by ${obj2.name}`);
 		}
 

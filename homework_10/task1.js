@@ -1,5 +1,5 @@
  function debounce(func, delay) {
-  var timer;
+  let timer;
   return function () {
     clearTimeout(timer);
     timer = setTimeout(func, delay);
