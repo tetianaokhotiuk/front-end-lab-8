@@ -6,6 +6,7 @@ li {
 p.opened, .emptyFolder {
 	font-style: italic;
 	margin-left: 1.5rem; 
+	
 }
 
 .opened {
@@ -15,3 +16,17 @@ p.opened, .emptyFolder {
 .closed {
 	display: none;
 }
+
+div.line:hover {
+	background-color: #e6e6e6; 
+}
+
+div.line {
+	display: flex;
+	flex-direction: row;
+}
+
+div p {
+	margin: 5px;
+}
+

@@ -10,15 +10,18 @@ function createFileTree(arr) {
             var item = document.createElement('li');
             item.className = "item";
             list.appendChild(item);
+            var div = document.createElement('div');
+            div.className = "line";
+            item.appendChild(div);
             var folder1 = document.createElement('i');
             folder1.className = "material-icons";
             folder1.innerHTML = "folder";
             folder1.style.color = "#d99f0d";
-            item.appendChild(folder1);
-            var title = document.createElement('span');
+            div.appendChild(folder1);
+            var title = document.createElement('p');
             title.innerHTML = arr[i].title;
-            item.appendChild(title);
-            folder1.addEventListener('click', toggle, true);
+            div.appendChild(title);
+            div.addEventListener('click', toggle, true);
 
 
             if (arr[i].children) {
@@ -36,14 +39,18 @@ function createFileTree(arr) {
         } else if (arr[i].title) {
             var item = document.createElement('li');
             list.appendChild(item);
+            var div = document.createElement('div');
+            div.className = "line";
+            item.appendChild(div);
             var file = document.createElement('i');
             file.className = "material-icons";
             file.innerHTML = "insert_drive_file";
             file.style.color = "#C7C7C7";
-            item.appendChild(file);
-            var title = document.createElement('span');
+            div.appendChild(file);
+            var title = document.createElement('p');
+            title.className = "title";
             title.innerHTML = arr[i].title;
-            item.appendChild(title);
+            div.appendChild(title);
 
         }
 
@@ -53,10 +60,10 @@ function createFileTree(arr) {
 
     function toggle(event) {
 
-        var folder = this.parentNode.children[0].innerHTML;
-        this.parentNode.children[0].innerHTML = folder == 'folder' ? 'folder_open' : 'folder';
-        var folderVisible = this.parentNode.children[2].className;
-        this.parentNode.children[2].className = folderVisible == 'opened' ? 'closed' : 'opened';
+        var folder = this.children[0].innerHTML;
+        this.children[0].innerHTML = folder == 'folder' ? 'folder_open' : 'folder';
+        var folderVisible = this.nextSibling.className;
+        this.nextSibling.className = folderVisible == 'opened' ? 'closed' : 'opened';
 
     }
 
