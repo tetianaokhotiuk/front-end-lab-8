@@ -3,7 +3,11 @@ li {
 	margin-bottom: .25rem;
 }
 
-p.opened, .emptyFolder {
+.emptyFolder {
+	display: none;
+}
+
+p.opened {
 	font-style: italic;
 	margin-left: 1.5rem; 
 	
