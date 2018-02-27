@@ -1,0 +1,17 @@
+li {
+	list-style: none;
+	margin-bottom: .25rem;
+}
+
+p.opened, .emptyFolder {
+	font-style: italic;
+	margin-left: 1.5rem; 
+}
+
+.opened {
+  display: block;
+}
+
+.closed {
+	display: none;
+}
