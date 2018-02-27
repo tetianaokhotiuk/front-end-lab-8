@@ -19,9 +19,12 @@ function createFileTree(arr) {
             folder1.style.color = "#d99f0d";
             div.appendChild(folder1);
             var title = document.createElement('p');
+            title.addEventListener('click', function() {
+            	event.stopPropagation();
+            });
             title.innerHTML = arr[i].title;
             div.appendChild(title);
-            div.addEventListener('click', toggle, true);
+            div.addEventListener('click', toggle);
 
 
             if (arr[i].children) {
