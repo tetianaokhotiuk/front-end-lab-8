@@ -111,10 +111,28 @@ function detailsCreation(arr) {
 	var table = document.createElement('div');
 	table.className = 'table';
 	container.appendChild(table);
+	title1 = document.createElement('h3');
+	tank.appendChild(title1);
+	title1.innerHTML = 'Preview';
+	title2 = document.createElement('h3');
+	table.appendChild(title2);
+	title2.innerHTML = 'Characteristic';
+	title1.innerHTML = 'Preview';
 	tankImg = document.createElement('img');
-	// tankImg.className = 'tankImg';
 	tank.appendChild(tankImg);
 	attributeCreation("src",currentModel.preview,tankImg);
+	tableTemp = document.createElement('table');
+	table.appendChild(tableTemp);
+	for (item in currentModel.details) {
+		var tr = document.createElement('tr');
+		tableTemp.appendChild(tr);
+		var td = document.createElement('td');
+		tr.appendChild(td);
+		td.innerHTML = item.replace(/_/gi,' ');
+		var td2 = document.createElement('td');
+		tr.appendChild(td2);
+		td2.innerHTML = currentModel.details[item];
+	}
 
 	var aBack = document.createElement('a');
 	rootNode.appendChild(aBack);
