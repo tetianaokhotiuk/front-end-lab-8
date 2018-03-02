@@ -7,9 +7,15 @@
 
 .item {
 	width: 15%;
+	height: 15%;
 	font-style: serif;
-	color: #A7A786;
+	color: #A19E86;
 	text-transform: uppercase;
+}
+
+.item:hover {
+	cursor: pointer;
+	background-color: #2A2A2A;
 }
 
 .tankImg {
@@ -17,8 +23,12 @@
 	height: 100%;
 }
 
+figure {
+	margin: 0;
+}
+
 figcaption {
-	width: 85%;
+	width: 75%;
 	margin: 0 auto;
 	font-size: .75rem;
 	display: flex;
@@ -44,19 +54,19 @@ span {
 
 a {
 	text-decoration: none;
-	color: #A7A786;
+	color: #A19E86;
 }
 
 .tank-details, .container {
-	color: #A7A786;
+	color: #A19E86;
 }
 
 .header {
-	font-size: 2rem;
+	font-size: 1.85rem;
 }
 
 table, tr, td {
-	border: 1px solid #A7A786;
+	border: 1px solid #A19E86;
 	border-collapse: collapse;
 }
 
