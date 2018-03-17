@@ -54,6 +54,7 @@ a:focus{color:#666;outline:0}ul{padding:0;margin:0}body{background-color:#f2f2f2
 /*task #2*/
 
 @media screen {
+
 	li.box {
 		border-top: none !important;
 		border-left: none !important;
@@ -134,10 +135,8 @@ a:focus{color:#666;outline:0}ul{padding:0;margin:0}body{background-color:#f2f2f2
 	input[type="text"] {
 		color: red;
 	}
-}
 
-
-/*task #13*/
+	/*task #13*/
 
 @media (max-width: 1140px) and (max-height: 835px) {
 	.tm-sidebar {
@@ -164,4 +163,9 @@ a:focus{color:#666;outline:0}ul{padding:0;margin:0}body{background-color:#f2f2f2
 		width: 70%;
 	}
 }
+
+}
+
+
+
 
