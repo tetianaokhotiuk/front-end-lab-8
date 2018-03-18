@@ -1,5 +1,7 @@
 @import 'variables';
 
+// PAGE HEADERS AND NAVBAR
+
 .page-header {
 	background-color: lighten(@grey, 55%);
 	border-bottom: 1px solid lighten(@grey, 45%);
@@ -22,6 +24,15 @@
 
 	}
 
+h1, h3 {
+	color: @blue;
+	padding-top: 1.5rem;
+}
+
+hr {
+	border-top: 1px solid @blue;
+}
+
 .navbar-light .navbar-nav .nav-link:hover {
 	color: #fff;
 }
@@ -30,20 +41,21 @@
 	margin: 1% 0;
 }
 
+// SECTION YOGA PILATES
+
 .section {
 	&-img {
 		width: 100%;
 	}
 }
 
+// SUBSECTION RELATED CLASSES
+
 .subsection {
 	margin-bottom: 2rem;
 
-	&-item {
-		// justify-content: space-between;
-		// margin-right: 0;
-		// margin-left: 0;
-	
+	&-figure {
+		padding: 1px;
 	}
 
 	&-text {
@@ -53,49 +65,21 @@
 		padding: 3% 0 3%;
 	}
 
-	&-figure {
-		// width: 25%;
-		// background-color: @blue;
-		padding: 1px 1px 0;
-
-		// &:first-child {
-		// 	background-color: @red;
-		// }
-
-		// &:nth-child(2n) {
-		// 	background-color: @blue;
-		// }
-
-		// &:nth-child(3n) {
-		// 	background-color: @orange;
-		// }
-	}
-
 	&-img {
 		width: 100%;
 	}
 
 }
 
-.first {
-	background-color: @red;
+.related-class {
+    .-(@i: length(@colors)) when (@i > 0) {
+        @name: extract(@colors, @i);
+        &.@{name} {background: @@name}
+        .-((@i - 1));
+    } .-;
 }
 
-.second {
-	background-color: @blue;
-}
-
-.third {
-	background-color: @orange;
-}
-
-.fourth {
-	background-color: @green;
-}
-
-figure:first-child(2) {
-	background-color: @blue;
-}
+// FOOTER 
 
 .legal {
 	background-color: @grey;
@@ -107,14 +91,7 @@ figure:first-child(2) {
 	}
 }
 
-h1, h3 {
-	color: @blue;
-	padding-top: 1.5rem;
-}
 
-hr {
-	border-top: 1px solid @blue;
-}
 
 
 
