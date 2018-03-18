@@ -2,18 +2,18 @@
 
 // PAGE HEADERS AND NAVBAR
 
-.page-header {
-	background-color: lighten(@grey, 55%);
-	border-bottom: 1px solid lighten(@grey, 45%);
+.card-header {
+	padding: 0;
 
-	.page-nav {
+	.navbar {
 		padding: 0;
 	}
 
 	.nav {
 
 		&-item {
-			padding: 1.5% 0;
+
+			padding: .25rem;
 
 			&:hover {
 				background-color: @blue;
@@ -24,15 +24,6 @@
 
 	}
 
-h1, h3 {
-	color: @blue;
-	padding-top: 1.5rem;
-}
-
-hr {
-	border-top: 1px solid @blue;
-}
-
 .navbar-light .navbar-nav .nav-link:hover {
 	color: #fff;
 }
@@ -41,13 +32,10 @@ hr {
 	margin: 1% 0;
 }
 
-// SECTION YOGA PILATES
-
-.section {
-	&-img {
-		width: 100%;
-	}
+h1, h3 {
+	margin-top: 2rem;
 }
+
 
 // SUBSECTION RELATED CLASSES
 
@@ -60,7 +48,6 @@ hr {
 
 	&-text {
 		text-align: center;
-		color: lighten(@grey, 100%);
 		margin-bottom: 0;
 		padding: 3% 0 3%;
 	}
@@ -87,7 +74,6 @@ hr {
 
 	&-text {
 		margin: 0;
-		color: lighten(@grey, 100%);
 	}
 }
 
