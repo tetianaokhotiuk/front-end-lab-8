@@ -51,7 +51,6 @@ Fighter.prototype.setTotalHitpoints = function (value) {
 
 Fighter.prototype.getAttack = function () {
 	return this._attack;
-	// console.log(this._attack);
 }
 
 Fighter.prototype.setAttack = function (value) {
@@ -135,7 +134,6 @@ Monster.prototype.training = function (obj) {
 	this._totalHitpoints = Math.floor(this._totalHitpoints + obj.totalHitpoints * 0.1);
 }
 
-
 var hunter = new Champion({name: 'Rexxar', attack: 10, hitpoints: 60});
 var beast = new Monster({name: 'King Krush', attack: 8, hitpoints: 80});
 
@@ -155,4 +153,4 @@ console.log(hunter.getAttack()); // -> 11
 console.log(hunter.getHitpoints()); // -> 44
 hunter.heal();
 console.log(hunter.getHitpoints()); // -> 49
-
+console.log(beast.getAttack());
