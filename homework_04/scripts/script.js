@@ -34,7 +34,7 @@ function Fighter(obj) {
 }
 
 Fighter.prototype.getHitpoints = function () {
-	console.log(this._hitpoints);
+	return this._hitpoints;
 }
 
 Fighter.prototype.setHitpoints = function (value) {
@@ -42,7 +42,7 @@ Fighter.prototype.setHitpoints = function (value) {
 }
 
 Fighter.prototype.getTotalHitpoints = function () {
-	console.log(this._totalHitpoints);
+	 return this._totalHitpoints;
 }
 
 Fighter.prototype.setTotalHitpoints = function (value) {
@@ -50,8 +50,8 @@ Fighter.prototype.setTotalHitpoints = function (value) {
 }
 
 Fighter.prototype.getAttack = function () {
-	this._attack++;
-	console.log(this._attack);
+	return this._attack;
+	// console.log(this._attack);
 }
 
 Fighter.prototype.setAttack = function (value) {
@@ -135,4 +135,24 @@ Monster.prototype.training = function (obj) {
 	this._totalHitpoints = Math.floor(this._totalHitpoints + obj.totalHitpoints * 0.1);
 }
 
+
+var hunter = new Champion({name: 'Rexxar', attack: 10, hitpoints: 60});
+var beast = new Monster({name: 'King Krush', attack: 8, hitpoints: 80});
+
+hunter.fight(beast);
+console.log(beast.getHitpoints()); // -> 70
+beast.enrage();
+hunter.fight(beast);
+console.log(beast.getHitpoints()); // -> 60
+beast.fight(hunter);
+console.log(hunter.getHitpoints()); // -> 44
+
+beast.setHitpoints(0)
+hunter.fight(beast);
+
+console.log(beast.isAlive()); // -> false
+console.log(hunter.getAttack()); // -> 11
+console.log(hunter.getHitpoints()); // -> 44
+hunter.heal();
+console.log(hunter.getHitpoints()); // -> 49
 
