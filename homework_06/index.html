@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>homework_06</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<form class="form-container">
+		<input type="text" name="q" class="form-control" id="q" value="">
+	    <button type="button" class="search-submit" id="demo" onclick="trackIp()">track ip</button>
+	</form>
+	<div class="wrapper">
+		<p id="response" class="response"></p>
+		<p id="info" class="info"></p>
+		<p id="city" class="city"></p>
+		<p id="country" class="country"></p>
+		<p id="latit" class="latit"></p>
+		<p id="longt" class="longt"></p>
+		<div id="resloader"></div>
+	</div>
+	<div class="form-container">
+	<button class="valid" type="button" id="valid" onclick="valid()">validate response</button>
+	</div>
+
+	<div class="wrapper" id="rez">
+		<div id="loader"></div>
+	</div>
+
+	<script type="text/javascript" src="js/task1.js"></script>
+	<script type="text/javascript" src="js/task2.js"></script>
+</body>
+</html>
