@@ -1,6 +1,6 @@
 function trackIp() {
     document.getElementById("resloader").setAttribute("class", "loader");
-	var ipAddress = document.getElementById("q").value;
+	var ipAddress = document.getElementById("ip").value;
     http.get(`https://ipapi.co/${ipAddress}/json/`)
     .then(
         function (value) {
@@ -20,7 +20,7 @@ function valid() {
     http.post(`https://shrouded-garden-94580.herokuapp.com/`, json)
     .then(
         function (value) {
-            document.getElementById('rez').innerHTML = value;
+            document.getElementById('result').innerHTML = value;
         },
         function (reason) {
             console.error('Something went wrong', reason);
