@@ -12,7 +12,6 @@
 	border: 1.5px solid black;
 	border-collapse: collapse;
 	float: left;
-
 }
 
 .but {
@@ -43,42 +42,58 @@
 	background-color: #fff;
 }
 
-.invisible {
-	display: none;
+#board {
+	width: 480px;
+	margin: 15px auto;
+	height: auto;
 }
 
-#board{
-    width:480px;
-    margin: 15px auto;
-}
 .item {
-    width:25px;
-    height:25px;
-    float:left;
-    padding:0px;
-    margin:0px;
-    background-color: #c8c384;
-    border: 3.5px solid #353318;
-    z-index: 1;
+	width: 25px;
+	height: 25px;
+	float: left;
+	padding: 0px;
+	margin: 0px;
+	background-color: #c8c384;
+	border: 3.5px solid #353318;
+	z-index: 1;
 }
- 
-.red {
-	background-color: red;
-}   
+
+.finish {
+	background-color: #df7020;
+}
 
 .winnerText {
-	color: red;
+	color: #e91640;
+	font-size: 30px;
 }
 
 .turn {
 	text-decoration: underline;
 }
 
-.unturn {
-	text-decoration: none;
+.gamer {
+	font-size: 20px;
 }
 
 .button {
-	display: block;
 	margin: 0 auto;
+	display: block;
+	padding: 10px 25px;
+	font-size: 20px;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+	color: #c8c384;
+	background-color: #353318;
+	border: none;
+	border-radius: 15px;
+	box-shadow: 0 3px #c8c384;
+}
+
+.final {
+	width: 100%;
+	float: left;
+	margin: 20px 0;
 }
