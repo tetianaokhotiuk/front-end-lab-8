@@ -1,13 +1,11 @@
-
-let stars;
 const fs = require('fs');
 fs.readFile('data/storage.json', (err, content) => {
   if (err) {
     console.log('error happened during reading the file')
-    return console.log(err)
+     console.log(err)
   } else {
 
-  stars = JSON.parse(content);
+  let stars = JSON.parse(content);
 }
 });
 
@@ -17,7 +15,7 @@ exports.getItem = (req, res) => {
 
 exports.createNewItem = (req, res) => {
 	if (stars.find(c => {c.name == req.body.name}))
-		 {return res.sendStatus(409)}
+		 { res.sendStatus(409)}
   	 else {
   	 	const star = {
 			id: stars.length + 1,
@@ -33,8 +31,9 @@ exports.createNewItem = (req, res) => {
 
 exports.updateItem = (req, res) => {
 	let star = stars.find(star => stars.id === parseInt(req.params.id));
-	if (!star)	{return res.sendStatus(404);}
-	else {
+	if (!star)	{
+	 res.sendStatus(404);
+	} else {
 		star.name = req.body.name;
 		star.band = req.body.band;
 		star.instrument = req.body.instrument;
@@ -44,7 +43,7 @@ exports.updateItem = (req, res) => {
 
 exports.getItemById = (req, res) => {
 	let star = stars.find(star => stars.id === parseInt(req.params.id));
-	if (!star)	{return res.sendStatus(404);}
+	if (!star)	{ res.sendStatus(404);}
 	else {
 		res.sendStatus(200).send(star);
 	}
@@ -52,7 +51,7 @@ exports.getItemById = (req, res) => {
 
 exports.removeItemById = (req, res) => {
 	let star = stars.find(star => stars.id === parseInt(req.params.id));
-	if (!star)	{return res.sendStatus(404);
+	if (!star)	{ res.sendStatus(404);
 	} else {
 		let id = stars.indexOf(star);
 		stars.splice(id,1);
