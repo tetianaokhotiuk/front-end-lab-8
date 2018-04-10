@@ -4,11 +4,11 @@ const bodyParser = require('body-parser');
 const path = require('./controllers/handlers.js')
 app.use(bodyParser.json());
 
-app.get('/stars', path.getItem);
-app.post('/star', path.createNewItem);
-app.put('/star/:id', path.updateItem);
-app.get('/star/:id', path.getItemById);
-app.delete('/star/:id', path.removeItemById);
+app.get('/rockstars', path.getItem);
+app.post('/rockstar', path.createNewItem);
+app.put('/rockstar/:id', path.updateItem);
+app.get('/rockstar/:id', path.getItemById);
+app.delete('/rockstar/:id', path.removeItemById);
 
 
 process.stdout.write('What are you waiting for? \n');
