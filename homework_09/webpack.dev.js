@@ -2,13 +2,13 @@
  const common = require('./webpack.common.js');
  const path = require('path');
  const SRC_DIR = path.resolve(__dirname, 'src');
- const DIST_DIR = path.resolve(__dirname, 'dist');
+ const BIN_DIR = path.resolve(__dirname, 'bin');
  const NODE_MODULES = path.resolve(__dirname, 'node_modules');
 
  module.exports = merge(common, {
    devtool: 'inline-source-map',
    devServer: {
-     contentBase: './dist'
+     contentBase: './bin'
    },
 
    devServer: {

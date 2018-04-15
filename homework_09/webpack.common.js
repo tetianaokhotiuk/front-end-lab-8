@@ -1,7 +1,7 @@
 const webpack = require('webpack');
 const path = require('path');
 const SRC_DIR = path.resolve(__dirname, 'src');
-const DIST_DIR = path.resolve(__dirname, 'dist');
+const BIN_DIR = path.resolve(__dirname, 'bin');
 const NODE_MODULES = path.resolve(__dirname, 'node_modules');
 const moment = require('moment');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
@@ -12,7 +12,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
   context: SRC_DIR,
   entry: './app.js',
   output: {
-    path: DIST_DIR,
+    path: BIN_DIR,
     filename: 'app.bundle.js'
   },
 
@@ -55,7 +55,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
       template: './app.html',
       inject: true
     }),
-    new CleanWebpackPlugin(['dist']),
+    new CleanWebpackPlugin(['bin']),
     new ExtractTextPlugin({
       filename: 'styles.css'
     }),
