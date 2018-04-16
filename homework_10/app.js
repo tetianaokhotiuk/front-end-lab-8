@@ -57,21 +57,14 @@ let AddNumberValidation = function(number) {
         } else {
             number.valid = true;
             number.valid = `${number.valid}, all validators passed`;
-        }
-        
+        }    
     }
-
-         
-
-
-
 
 
 //  Then you can create add validation decorators and add functionality to numberInput
 //  AddRequiredValidation Decorator that add required validation
 //  AddMaxLengthValidation Decorator that add max length validation
 //  AddNumberValidation Decorator for only number values validation
-
 
 // The desired behaviour would be
 AddRequiredValidation(numberInput);
@@ -92,5 +85,4 @@ console.log(numberInput.valid); //---> false, because of max length validator
 // Notice after applying some validator to an object, it gets additional "valid" property;
 
 
-// AddMaxLengthValidation(numberInput,3);
-// 
+
